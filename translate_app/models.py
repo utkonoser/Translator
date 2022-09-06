@@ -1,6 +1,9 @@
+
+
 from django.db import models
 
 # Create your models here.
+
 class TranslateModel(models.Model):
     LANGUAGES = [
     ('ar', 'arabic'),
