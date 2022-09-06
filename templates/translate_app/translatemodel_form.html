@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="post" style="display:flex;flex-direction:column;width:100%" >
+    {% csrf_token %}
+    <div class="d-grid gap-3"  style="width:100%" >
+        <div class="bg-light border rounded-3" style="width:100%">
+            <div>
+            <big>Translate from {{form.language_to_translate}}  to  {{form.language_to_be_translated}}  :</big>
+            </div>
+            <br><textarea style="width:100%" name="text_to_translate" id="text_to_translate" maxlength="10000" rows="16" placeholder="Write yor text there..." required autofocus></textarea><br><br>
+        </div>
+    </div>
+    <div class="d-grid gap-3"  style="width:100%">
+        <input type="submit" value="TRANSLATE TEXT">
+    </div>
+</form>
+
+{% endblock %}
+
+           

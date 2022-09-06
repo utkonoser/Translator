@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="dropdown-menu d-block position-static pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px">
+    {% for item in translated_list%}
+        <ul class="list-unstyled mb-0">
+        <big><li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="/translate/detail/{{item.id}}">
+                <span class="d-inline-block bg-success rounded-circle p-1"></span>
+                <div style="display:flex">    
+                {{item}} 
+            </div>
+        </a></li></big>
+        </ul>
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}
+href="/translate/detail/delete/{{item.id}}"

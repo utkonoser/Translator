@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="d-grid gap-3"  style="width:100%" >
+    <div class="bg-light border rounded-3" style="width:100%">
+        <div>
+        <big>Translate from "{{translatemodel.language_to_translate}}"  to  "{{translatemodel.language_to_be_translated}}"  :</big>
+        </div>
+        <big><textarea style="width:100%" disabled rows="5">{{translatemodel.text_to_translate}}</textarea></big>
+    </div>
+</div>
+<div class="d-grid gap-3"  style="width:100%">
+    <div class="bg-light border rounded-3">
+        <br><big><textarea style="width:100%" disabled rows="5">{{translatemodel.translated_text}}</textarea></big><br>
+    </div>
+</div>
+{% endblock %}
