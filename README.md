@@ -6,7 +6,8 @@ A simple translator that implements a database (SQLlite) that stores the history
 1. Clone this repository.
 2. Installing a virtual environment so as not to clog your system with unnecessary libraries.
 3. Install via pip libraries for translation and install django (python -m pip install Django , pip install translate).
-4. Run development server and fun.
+4. Run makemigrations and migrate.
+5. Run development server and fun.
 ### Several views from this project :
 1. From home page:
 ![Alt text](/for_readme/home.png "Optional title")
